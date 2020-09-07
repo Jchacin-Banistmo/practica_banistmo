@@ -1,8 +1,8 @@
 # language: es
 # autor: Jonathan Chacin
 
-@RevisionProductosYServicios
-Característica: Realizar la descarga de contrato de tarjeta de credito
+@VisualizacionProductosYServicios
+Característica: Realizar la visualizacion de los productos y servicios de banistmo
   Yo como cliente
   Quiero realizar visualizacion de los productos y servicios en el sitio web de Banistmo
   Para obtener informacion detallada de los productos.

@@ -5,6 +5,8 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import pa.com.banistmo.userinterface.CuentasCorrientesUserInterface;
 
+import static pa.com.banistmo.userinterface.CuentasCorrientesUserInterface.*;
+
 public class SeMuestreLaPaginaCuentaCorriente implements Question<Boolean> {
     private String verificaCuentaCorriente;
 
@@ -20,7 +22,7 @@ public class SeMuestreLaPaginaCuentaCorriente implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         boolean resultadoTextoCuenta;
 
-        String textoCuentaCorriente = Text.of(CuentasCorrientesUserInterface.TEXTO_CUENTAS_CORRIENTE).viewedBy(actor).asString();
+        String textoCuentaCorriente = Text.of(TEXTO_CUENTAS_CORRIENTE).viewedBy(actor).asString();
 
         if(verificaCuentaCorriente.equals(textoCuentaCorriente)){
             resultadoTextoCuenta = true;
